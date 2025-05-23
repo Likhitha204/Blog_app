@@ -1,0 +1,12 @@
+# Ignore node_modules and build artifacts
+node_modules/
+build/
+dist/
+
+# Ignore uploads if stored here
+public/upload/
+
+# Mac and VS Code artifacts
+.DS_Store
+.env
+.vscode/
