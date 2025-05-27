@@ -8,7 +8,10 @@ import multer from "multer";
 const app = express();
 
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser());app.use("/upload", express.static("../client/public/upload"));
+
+app.use("/upload", express.static("../client/public/upload"));
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "../client/public/upload");
